@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/txt_field" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/btn_add"
+        android:onClick="click"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/btn_cancel"
+        android:onClick="click"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:tag="@string/text_vova"
+        android:onClick="click"
+        app:srcCompat="@drawable/bu" />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/unvisible_image"
+        android:layout_gravity="center"
+        android:tag="@string/text_dog"
+        android:visibility="invisible"
+        android:src="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/empty_txt"
+        android:textColor="@color/colorAccent" />
+    <Button
+        android:id="@+id/buttonchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/btn_change_photo"
+        android:onClick="click"/>
+    <Button
+        android:id="@+id/buttonblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/btn_blue"
+        android:onClick="click"/>
+
+</LinearLayout>
